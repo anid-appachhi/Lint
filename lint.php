@@ -1,5 +1,4 @@
-<?php
-	include
+<?php 
 	lintAnalyzeAPK();
 	function lintAnalyzeAPK() {
 
@@ -13,30 +12,12 @@
 		$lintErrorLocationSave = "/home/anid/Documents/lint_error.txt";
 		// run lint
 		shell_exec( "lint $lintProjectLocation > $lintErrorLocationSave" );
+		$MASTER_LIST  = parse_ini_file( "LintErrors.ini");
 
-		readLintOutputToCSV( $lintErrorLocationSave );
+		readLintOutputToCSV( $lintErrorLocationSave, $MASTER_LIST );
 	}
 
-	/*function readLintOutputToCSV( $lintOutputLocation ) {
-
-		$fileContentArray = file( $lintOutputLocation );
-		$csvFilePointer = fopen( "/home/anid/Documents/lint1.csv" , "w" );
-		$sz = sizeof( $fileContentArray );
-		$desc = array();
-		for( $index = 3; $index < $sz; $index++ ) {
-			$line = trim( $fileContentArray[ $index ] );
-			if( isLineBreak( $line ) ) {
-
-				fputcsv( $csvFilePointer, $desc );
-				$desc = array();
-			} else {
-				array_push( $desc, $line);
-			}
-		}
-		fclose( $csvFilePointer );
-	}*/
-
-	function readLintOutputToCSV( $lintOutputLocation ) {
+	function readLintOutputToCSV( $lintOutputLocation, &$errorList ) {
 
 		$fileContentArray = file( $lintOutputLocation );
 		$csvFilePointer = fopen( "/home/anid/Documents/lint.csv" , "w" );
@@ -60,7 +41,15 @@
 					$index++;
 				}
 			}
+			// assign priority
+			$id = trim( getBugId( $desc[ 0 ] ) );
+			$priority = getPriorityFromList( $errorList, $id );
+			if( $priority == "" ) {
+				$priority = "NO PRIORITY";
+			}
+			array_push( $desc,  $priority );
 			fputcsv( $csvFilePointer,  $desc );
+			//print_r( $desc );
 			$desc = array();
 		}
 		fclose( $csvFilePointer );
@@ -85,11 +74,12 @@
 		$regExp = "/\[[A-z]+\]/";
 		$matches = array();
 		$found = preg_match( $regExp, $line, $matches );
-		if( $found == 1 ) {
+		if( $found === 1 ) {
 			$bugId = trim( $matches[ 0 ] );
 			// remove '[' and ']'
 			$regExpPattern = "/\[|\]/";
-		$str = trim( preg_replace( $regExpPattern, "", $bugId ) );
+			$str = trim( preg_replace( $regExpPattern, "", $bugId ) );
+			$bugId = $str;
 		}
 		return $bugId;
 	}
@@ -100,6 +90,17 @@
 		$sz = sizeof( $arr );
 		if( $nextPos < $sz ) {
 			return trim( $arr[ $nextPos ] );
+		}
+		return "";
+	}
+
+	function getPriorityFromList( & $errorList, $bugId ) {
+
+		$sz = sizeof( $errorList );
+		for( $index = 0; $index < $sz; $index++ ) {
+			if( $errorList[ $index ][ 'bugId' ] == $bugId ) {
+				return trim( $errorList[ $index ][ 'priority'] );
+			}
 		}
 		return "";
 	}

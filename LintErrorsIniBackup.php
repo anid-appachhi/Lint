@@ -1,0 +1,1470 @@
+<?php
+
+$MASTER_LIST = array(
+		0 => array( 
+					"bugId" => "ContentDescription",
+					"bugSummary" => "Image without contentDescription",
+					"priority" => "MEDIUM"
+				), 
+		1 => array( 
+					"bugId" => "AddJavascriptInterface",
+					"bugSummary" => "addJavascriptInterface Called",
+					"priority" => "MEDIUM"
+				), 
+		2 => array( 
+					"bugId" => "ShortAlarm",
+					"bugSummary" => "Short or Frequent Alarm",
+					"priority" => "MEDIUM"
+				), 
+		3 => array( 
+					"bugId" => "AllCaps",
+					"bugSummary" => "Combining textAllCaps and markup",
+					"priority" => "MEDIUM"
+				), 
+		4 => array( 
+					"bugId" => "AllowAllHostnameVerifier",
+					"bugSummary" => "Insecure HostnameVerifier",
+					"priority" => "MEDIUM"
+				), 
+		5 => array( 
+					"bugId" => "AlwaysShowAction",
+					"bugSummary" => "Usage of showAsAction=always",
+					"priority" => "MEDIUM"
+				), 
+		6 => array( 
+					"bugId" => "InvalidUsesTagAttribute",
+					"bugSummary" => "Invalid name attribute for uses element.",
+					"priority" => "MEDIUM"
+				), 
+		7 => array( 
+					"bugId" => "MissingIntentFilterForMediaSearch",
+					"bugSummary" => "Missing intent-filter with action",
+					"priority" => "MEDIUM"
+				), 
+		8 => array( 
+					"bugId" => "MissingMediaBrowserServiceIntentFilter",
+					"bugSummary" => "Missing intent-filter with action",
+					"priority" => "MEDIUM"
+				), 
+		9 => array( 
+					"bugId" => "MissingOnPlayFromSearch",
+					"bugSummary" => "Missing onPlayFromSearch.",
+					"priority" => "MEDIUM"
+				), 
+		10 => array( 
+					"bugId" => "ImpliedTouchscreenHardware",
+					"bugSummary" => "Hardware feature touchscreen not explicitly",
+					"priority" => "MEDIUM"
+				), 
+		11 => array( 
+					"bugId" => "MissingTvBanner",
+					"bugSummary" => "TV Missing Banner",
+					"priority" => "MEDIUM"
+				), 
+		12 => array( 
+					"bugId" => "MissingLeanbackLauncher",
+					"bugSummary" => "Missing Leanback Launcher Intent Filter.",
+					"priority" => "MEDIUM"
+				), 
+		13 => array( 
+					"bugId" => "MissingLeanbackSupport",
+					"bugSummary" => "Missing Leanback Support.",
+					"priority" => "MEDIUM"
+				), 
+		14 => array( 
+					"bugId" => "PermissionImpliesUnsupportedHardware",
+					"bugSummary" => "Permission Implies Unsupported",
+					"priority" => "MEDIUM"
+				), 
+		15 => array( 
+					"bugId" => "UnsupportedTvHardware",
+					"bugSummary" => "Unsupported TV Hardware Feature",
+					"priority" => "MEDIUM"
+				), 
+		16 => array( 
+					"bugId" => "SupportAnnotationUsage",
+					"bugSummary" => "Incorrect support annotation usage",
+					"priority" => "MEDIUM"
+				), 
+		17 => array( 
+					"bugId" => "ShiftFlags",
+					"bugSummary" => "Dangerous Flag Constant Declaration",
+					"priority" => "MEDIUM"
+				), 
+		18 => array( 
+					"bugId" => "LocalSuppress",
+					"bugSummary" => "@SuppressLint on invalid element",
+					"priority" => "MEDIUM"
+				), 
+		19 => array( 
+					"bugId" => "SwitchIntDef",
+					"bugSummary" => "Missing @IntDef in Switch",
+					"priority" => "MEDIUM"
+				), 
+		20 => array( 
+					"bugId" => "UniqueConstants",
+					"bugSummary" => "Overlapping Enumeration Constants",
+					"priority" => "MEDIUM"
+				), 
+		21 => array( 
+					"bugId" => "InlinedApi",
+					"bugSummary" => "Using inlined constants on older versions",
+					"priority" => "MEDIUM"
+				), 
+		22 => array( 
+					"bugId" => "Override",
+					"bugSummary" => "Method conflicts with new inherited method",
+					"priority" => "MEDIUM"
+				), 
+		23 => array( 
+					"bugId" => "ObsoleteSdkInt",
+					"bugSummary" => "Obsolete SDK_INT Version Check",
+					"priority" => "MEDIUM"
+				), 
+		24 => array( 
+					"bugId" => "NewApi",
+					"bugSummary" => "Calling new methods on older versions",
+					"priority" => "MEDIUM"
+				), 
+		25 => array( 
+					"bugId" => "UnusedAttribute",
+					"bugSummary" => "Attribute unused on older versions",
+					"priority" => "MEDIUM"
+				), 
+		26 => array( 
+					"bugId" => "AppCompatMethod",
+					"bugSummary" => "Using Wrong AppCompat Method",
+					"priority" => "MEDIUM"
+				), 
+		27 => array( 
+					"bugId" => "AppCompatCustomView",
+					"bugSummary" => "Appcompat Custom Widgets",
+					"priority" => "MEDIUM"
+				), 
+		28 => array( 
+					"bugId" => "AppCompatResource",
+					"bugSummary" => "Menu namespace",
+					"priority" => "MEDIUM"
+				), 
+		29 => array( 
+					"bugId" => "GoogleAppIndexingApiWarning",
+					"bugSummary" => "Missing support for Firebase App Indexing Api",
+					"priority" => "MEDIUM"
+				), 
+		30 => array( 
+					"bugId" => "GoogleAppIndexingUrlError",
+					"bugSummary" => "URL not supported by app for Firebase App",
+					"priority" => "MEDIUM"
+				), 
+		31 => array( 
+					"bugId" => "GoogleAppIndexingWarning",
+					"bugSummary" => "Missing support for Firebase App Indexing",
+					"priority" => "MEDIUM"
+				), 
+		32 => array( 
+					"bugId" => "AppLinksAutoVerifyError",
+					"bugSummary" => "App Links Auto Verification Failure",
+					"priority" => "MEDIUM"
+				), 
+		33 => array( 
+					"bugId" => "AppLinksAutoVerifyWarning",
+					"bugSummary" => "Potential App Links Auto Verification Failure",
+					"priority" => "MEDIUM"
+				), 
+		34 => array( 
+					"bugId" => "InconsistentArrays",
+					"bugSummary" => "Inconsistencies in array element counts",
+					"priority" => "MEDIUM"
+				), 
+		35 => array( 
+					"bugId" => "Assert",
+					"bugSummary" => "Assertions",
+					"priority" => "MEDIUM"
+				), 
+		36 => array( 
+					"bugId" => "BadHostnameVerifier",
+					"bugSummary" => "Insecure HostnameVerifier",
+					"priority" => "MEDIUM"
+				), 
+		37 => array( 
+					"bugId" => "BatteryLife",
+					"bugSummary" => "Battery Life Issues",
+					"priority" => "MEDIUM"
+				), 
+		38 => array( 
+					"bugId" => "BackButton",
+					"bugSummary" => "Back button",
+					"priority" => "MEDIUM"
+				), 
+		39 => array( 
+					"bugId" => "ButtonCase",
+					"bugSummary" => "Cancel/OK dialog button capitalization",
+					"priority" => "MEDIUM"
+				), 
+		40 => array( 
+					"bugId" => "ButtonOrder",
+					"bugSummary" => "Button order",
+					"priority" => "MEDIUM"
+				), 
+		41 => array( 
+					"bugId" => "ButtonStyle",
+					"bugSummary" => "Button should be borderless",
+					"priority" => "MEDIUM"
+				), 
+		42 => array( 
+					"bugId" => "ByteOrderMark",
+					"bugSummary" => "Byte order mark inside files",
+					"priority" => "MEDIUM"
+				), 
+		43 => array( 
+					"bugId" => "MissingSuperCall",
+					"bugSummary" => "Missing Super Call",
+					"priority" => "MEDIUM"
+				), 
+		44 => array( 
+					"bugId" => "AdapterViewChildren",
+					"bugSummary" => "AdapterViews cannot have children in XML",
+					"priority" => "MEDIUM"
+				), 
+		45 => array( 
+					"bugId" => "ScrollViewCount",
+					"bugSummary" => "ScrollViews can have only one child",
+					"priority" => "MEDIUM"
+				), 
+		46 => array( 
+					"bugId" => "PermissionImpliesUnsupportedChromeOsHardware",
+					"bugSummary" => "Permission Implies Unsupported",
+					"priority" => "MEDIUM"
+				), 
+		47 => array( 
+					"bugId" => "UnsupportedChromeOsHardware",
+					"bugSummary" => "Unsupported Chrome OS Hardware Feature",
+					"priority" => "MEDIUM"
+				), 
+		48 => array( 
+					"bugId" => "GetInstance",
+					"bugSummary" => "Cipher.getInstance with ECB",
+					"priority" => "MEDIUM"
+				), 
+		49 => array( 
+					"bugId" => "CommitTransaction",
+					"bugSummary" => "Missing commit() calls",
+					"priority" => "MEDIUM"
+				), 
+		50 => array( 
+					"bugId" => "Recycle",
+					"bugSummary" => "Missing recycle() calls",
+					"priority" => "MEDIUM"
+				), 
+		51 => array( 
+					"bugId" => "CommitPrefEdits",
+					"bugSummary" => "Missing commit() on SharedPreference editor",
+					"priority" => "MEDIUM"
+				), 
+		52 => array( 
+					"bugId" => "ApplySharedPref",
+					"bugSummary" => "Use apply() on SharedPreferences",
+					"priority" => "MEDIUM"
+				), 
+		53 => array( 
+					"bugId" => "ClickableViewAccessibility",
+					"bugSummary" => "Accessibility in Custom Views",
+					"priority" => "MEDIUM"
+				), 
+		54 => array( 
+					"bugId" => "EasterEgg",
+					"bugSummary" => "Code contains easter egg",
+					"priority" => "MEDIUM"
+				), 
+		55 => array( 
+					"bugId" => "StopShip",
+					"bugSummary" => "Code contains STOPSHIP marker",
+					"priority" => "MEDIUM"
+				), 
+		56 => array( 
+					"bugId" => "MissingConstraints",
+					"bugSummary" => "Missing Constraints in ConstraintLayout",
+					"priority" => "MEDIUM"
+				), 
+		57 => array( 
+					"bugId" => "VulnerableCordovaVersion",
+					"bugSummary" => "Vulnerable Cordova Version",
+					"priority" => "MEDIUM"
+				), 
+		58 => array( 
+					"bugId" => "CustomViewStyleable",
+					"bugSummary" => "Mismatched Styleable/Custom View Name",
+					"priority" => "MEDIUM"
+				), 
+		59 => array( 
+					"bugId" => "CutPasteId",
+					"bugSummary" => "Likely cut & paste mistakes",
+					"priority" => "MEDIUM"
+				), 
+		60 => array( 
+					"bugId" => "SimpleDateFormat",
+					"bugSummary" => "Implied locale in date format",
+					"priority" => "MEDIUM"
+				), 
+		61 => array( 
+					"bugId" => "SetTextI18n",
+					"bugSummary" => "TextView Internationalization",
+					"priority" => "MEDIUM"
+				), 
+		62 => array( 
+					"bugId" => "Deprecated",
+					"bugSummary" => "Using deprecated resources",
+					"priority" => "MEDIUM"
+				), 
+		63 => array( 
+					"bugId" => "MissingPrefix",
+					"bugSummary" => "Missing Android XML namespace",
+					"priority" => "MEDIUM"
+				), 
+		64 => array( 
+					"bugId" => "MangledCRLF",
+					"bugSummary" => "Mangled file line endings",
+					"priority" => "MEDIUM"
+				), 
+		65 => array( 
+					"bugId" => "DuplicateIncludedIds",
+					"bugSummary" => "Duplicate ids across layouts combined with include",
+					"priority" => "MEDIUM"
+				), 
+		66 => array( 
+					"bugId" => "DuplicateIds",
+					"bugSummary" => "Duplicate ids within a single layout",
+					"priority" => "MEDIUM"
+				), 
+		67 => array( 
+					"bugId" => "DuplicateDefinition",
+					"bugSummary" => "Duplicate definitions of resources",
+					"priority" => "MEDIUM"
+				), 
+		68 => array( 
+					"bugId" => "ReferenceType",
+					"bugSummary" => "Incorrect reference types",
+					"priority" => "MEDIUM"
+				), 
+		69 => array( 
+					"bugId" => "StringEscaping",
+					"bugSummary" => "Invalid string escapes",
+					"priority" => "MEDIUM"
+				), 
+		70 => array( 
+					"bugId" => "UnpackedNativeCode",
+					"bugSummary" => "Missing android",
+					"priority" => "MEDIUM"
+				), 
+		71 => array( 
+					"bugId" => "UnsafeDynamicallyLoadedCode",
+					"bugSummary" => "load used to dynamically load code",
+					"priority" => "MEDIUM"
+				), 
+		72 => array( 
+					"bugId" => "UnsafeNativeCodeLocation",
+					"bugSummary" => "Native code outside library directory",
+					"priority" => "MEDIUM"
+				), 
+		73 => array( 
+					"bugId" => "ExtraText",
+					"bugSummary" => "Extraneous text in resource files",
+					"priority" => "MEDIUM"
+				), 
+		74 => array( 
+					"bugId" => "FieldGetter",
+					"bugSummary" => "Using getter instead of field",
+					"priority" => "MEDIUM"
+				), 
+		75 => array( 
+					"bugId" => "InvalidAnalyticsName",
+					"bugSummary" => "Invalid Analytics Name",
+					"priority" => "MEDIUM"
+				), 
+		76 => array( 
+					"bugId" => "MissingFirebaseInstanceTokenRefresh",
+					"bugSummary" => "Missing Firebase Instance ID Token",
+					"priority" => "MEDIUM"
+				), 
+		77 => array( 
+					"bugId" => "FullBackupContent",
+					"bugSummary" => "Valid Full Backup Content File",
+					"priority" => "MEDIUM"
+				), 
+		78 => array( 
+					"bugId" => "ValidFragment",
+					"bugSummary" => "Fragment not instantiatable",
+					"priority" => "MEDIUM"
+				), 
+		79 => array( 
+					"bugId" => "PackageManagerGetSignatures",
+					"bugSummary" => "Potential Multiple Certificate Exploit",
+					"priority" => "MEDIUM"
+				), 
+		80 => array( 
+					"bugId" => "AccidentalOctal",
+					"bugSummary" => "Accidental Octal",
+					"priority" => "MEDIUM"
+				), 
+		81 => array( 
+					"bugId" => "UseOfBundledGooglePlayServices",
+					"bugSummary" => "Use of bundled version of Google Play",
+					"priority" => "MEDIUM"
+				), 
+		82 => array( 
+					"bugId" => "GradleCompatible",
+					"bugSummary" => "Incompatible Gradle Versions",
+					"priority" => "MEDIUM"
+				), 
+		83 => array( 
+					"bugId" => "GradleDependency",
+					"bugSummary" => "Obsolete Gradle Dependency",
+					"priority" => "MEDIUM"
+				), 
+		84 => array( 
+					"bugId" => "GradleDeprecated",
+					"bugSummary" => "Deprecated Gradle Construct",
+					"priority" => "MEDIUM"
+				), 
+		85 => array( 
+					"bugId" => "GradleGetter",
+					"bugSummary" => "Gradle Implicit Getter Call",
+					"priority" => "MEDIUM"
+				), 
+		86 => array( 
+					"bugId" => "GradlePluginVersion",
+					"bugSummary" => "Incompatible Android Gradle Plugin",
+					"priority" => "MEDIUM"
+				), 
+		87 => array( 
+					"bugId" => "HighAppVersionCode",
+					"bugSummary" => "VersionCode too high",
+					"priority" => "MEDIUM"
+				), 
+		88 => array( 
+					"bugId" => "GradleIdeError",
+					"bugSummary" => "Gradle IDE Support Issues",
+					"priority" => "MEDIUM"
+				), 
+		89 => array( 
+					"bugId" => "GradlePath",
+					"bugSummary" => "Gradle Path Issues",
+					"priority" => "MEDIUM"
+				), 
+		90 => array( 
+					"bugId" => "GradleDynamicVersion",
+					"bugSummary" => "Gradle Dynamic Version",
+					"priority" => "MEDIUM"
+				), 
+		91 => array( 
+					"bugId" => "NotInterpolated",
+					"bugSummary" => "Incorrect Interpolation",
+					"priority" => "MEDIUM"
+				), 
+		92 => array( 
+					"bugId" => "StringShouldBeInt",
+					"bugSummary" => "String should be int",
+					"priority" => "MEDIUM"
+				), 
+		93 => array( 
+					"bugId" => "NewerVersionAvailable",
+					"bugSummary" => "Newer Library Versions Available",
+					"priority" => "MEDIUM"
+				), 
+		94 => array( 
+					"bugId" => "GridLayout",
+					"bugSummary" => "GridLayout validation",
+					"priority" => "MEDIUM"
+				), 
+		95 => array( 
+					"bugId" => "HandlerLeak",
+					"bugSummary" => "Handler reference leaks",
+					"priority" => "MEDIUM"
+				), 
+		96 => array( 
+					"bugId" => "HardcodedDebugMode",
+					"bugSummary" => "Hardcoded value of android",
+					"priority" => "MEDIUM"
+				), 
+		97 => array( 
+					"bugId" => "HardcodedText",
+					"bugSummary" => "Hardcoded text",
+					"priority" => "MEDIUM"
+				), 
+		98 => array( 
+					"bugId" => "HardwareIds",
+					"bugSummary" => "Hardware Id Usage",
+					"priority" => "MEDIUM"
+				), 
+		99 => array( 
+					"bugId" => "IconDuplicatesConfig",
+					"bugSummary" => "Identical bitmaps across various configurations",
+					"priority" => "MEDIUM"
+				), 
+		100 => array( 
+					"bugId" => "IconDuplicates",
+					"bugSummary" => "Duplicated icons under different names",
+					"priority" => "MEDIUM"
+				), 
+		101 => array( 
+					"bugId" => "GifUsage",
+					"bugSummary" => "Using .gif format for bitmaps is discouraged",
+					"priority" => "MEDIUM"
+				), 
+		102 => array( 
+					"bugId" => "IconColors",
+					"bugSummary" => "Icon colors do not follow the recommended visual style",
+					"priority" => "MEDIUM"
+				), 
+		103 => array( 
+					"bugId" => "IconDensities",
+					"bugSummary" => "Icon densities validation",
+					"priority" => "MEDIUM"
+				), 
+		104 => array( 
+					"bugId" => "IconDipSize",
+					"bugSummary" => "Icon density-independent size validation",
+					"priority" => "MEDIUM"
+				), 
+		105 => array( 
+					"bugId" => "IconExpectedSize",
+					"bugSummary" => "Icon has incorrect size",
+					"priority" => "MEDIUM"
+				), 
+		106 => array( 
+					"bugId" => "IconExtension",
+					"bugSummary" => "Icon format does not match the file extension",
+					"priority" => "MEDIUM"
+				), 
+		107 => array( 
+					"bugId" => "IconLauncherFormat",
+					"bugSummary" => "Wrong launcher icon format",
+					"priority" => "MEDIUM"
+				), 
+		108 => array( 
+					"bugId" => "IconLauncherShape",
+					"bugSummary" => "The launcher icon shape should use a distinct silhouette",
+					"priority" => "MEDIUM"
+				), 
+		109 => array( 
+					"bugId" => "IconLocation",
+					"bugSummary" => "Image defined in density-independent drawable folder",
+					"priority" => "MEDIUM"
+				), 
+		110 => array( 
+					"bugId" => "IconMissingDensityFolder",
+					"bugSummary" => "Missing density folder",
+					"priority" => "MEDIUM"
+				), 
+		111 => array( 
+					"bugId" => "IconMixedNinePatch",
+					"bugSummary" => "Clashing PNG and 9-PNG files",
+					"priority" => "MEDIUM"
+				), 
+		112 => array( 
+					"bugId" => "IconNoDpi",
+					"bugSummary" => "Icon appears in both -nodpi and dpi folders",
+					"priority" => "MEDIUM"
+				), 
+		113 => array( 
+					"bugId" => "IconXmlAndPng",
+					"bugSummary" => "Icon is specified both as .xml file and as a bitmap",
+					"priority" => "MEDIUM"
+				), 
+		114 => array( 
+					"bugId" => "ConvertToWebp",
+					"bugSummary" => "Convert to WebP",
+					"priority" => "MEDIUM"
+				), 
+		115 => array( 
+					"bugId" => "WebpUnsupported",
+					"bugSummary" => "WebP Unsupported",
+					"priority" => "MEDIUM"
+				), 
+		116 => array( 
+					"bugId" => "IncludeLayoutParam",
+					"bugSummary" => "Ignored layout params on include",
+					"priority" => "MEDIUM"
+				), 
+		117 => array( 
+					"bugId" => "DisableBaselineAlignment",
+					"bugSummary" => "Missing baselineAligned attribute",
+					"priority" => "MEDIUM"
+				), 
+		118 => array( 
+					"bugId" => "InefficientWeight",
+					"bugSummary" => "Inefficient layout weight",
+					"priority" => "MEDIUM"
+				), 
+		119 => array( 
+					"bugId" => "NestedWeights",
+					"bugSummary" => "Nested layout weights",
+					"priority" => "MEDIUM"
+				), 
+		120 => array( 
+					"bugId" => "Orientation",
+					"bugSummary" => "Missing explicit orientation",
+					"priority" => "MEDIUM"
+				), 
+		121 => array( 
+					"bugId" => "Suspicious0dp",
+					"bugSummary" => "Suspicious 0dp dimension",
+					"priority" => "MEDIUM"
+				), 
+		122 => array( 
+					"bugId" => "DuplicateDivider",
+					"bugSummary" => "Unnecessary Divider Copy",
+					"priority" => "MEDIUM"
+				), 
+		123 => array( 
+					"bugId" => "TrustAllX509TrustManager",
+					"bugSummary" => "Insecure TLS/SSL trust manager",
+					"priority" => "MEDIUM"
+				), 
+		124 => array( 
+					"bugId" => "InvalidPackage",
+					"bugSummary" => "Package not included in Android",
+					"priority" => "MEDIUM"
+				), 
+		125 => array( 
+					"bugId" => "DrawAllocation",
+					"bugSummary" => "Memory allocations within drawing code",
+					"priority" => "MEDIUM"
+				), 
+		126 => array( 
+					"bugId" => "UseSparseArrays",
+					"bugSummary" => "HashMap can be replaced with SparseArray",
+					"priority" => "MEDIUM"
+				), 
+		127 => array( 
+					"bugId" => "UseValueOf",
+					"bugSummary" => "Should use valueOf instead of new",
+					"priority" => "MEDIUM"
+				), 
+		128 => array( 
+					"bugId" => "JavascriptInterface",
+					"bugSummary" => "Missing @JavascriptInterface on methods",
+					"priority" => "MEDIUM"
+				), 
+		129 => array( 
+					"bugId" => "LabelFor",
+					"bugSummary" => "Missing labelFor attribute",
+					"priority" => "MEDIUM"
+				), 
+		130 => array( 
+					"bugId" => "InconsistentLayout",
+					"bugSummary" => "Inconsistent Layouts",
+					"priority" => "MEDIUM"
+				), 
+		131 => array( 
+					"bugId" => "InflateParams",
+					"bugSummary" => "Layout Inflation without a Parent",
+					"priority" => "MEDIUM"
+				), 
+		132 => array( 
+					"bugId" => "StaticFieldLeak",
+					"bugSummary" => "Static Field Leaks",
+					"priority" => "MEDIUM"
+				), 
+		133 => array( 
+					"bugId" => "DefaultLocale",
+					"bugSummary" => "Implied default locale in case conversion",
+					"priority" => "MEDIUM"
+				), 
+		134 => array( 
+					"bugId" => "LocaleFolder",
+					"bugSummary" => "Wrong locale name",
+					"priority" => "MEDIUM"
+				), 
+		135 => array( 
+					"bugId" => "InvalidResourceFolder",
+					"bugSummary" => "Invalid Resource Folder",
+					"priority" => "MEDIUM"
+				), 
+		136 => array( 
+					"bugId" => "WrongRegion",
+					"bugSummary" => "Suspicious Language/Region Combination",
+					"priority" => "MEDIUM"
+				), 
+		137 => array( 
+					"bugId" => "UseAlpha2",
+					"bugSummary" => "Using 3-letter Codes",
+					"priority" => "MEDIUM"
+				), 
+		138 => array( 
+					"bugId" => "LogConditional",
+					"bugSummary" => "Unconditional Logging Calls",
+					"priority" => "MEDIUM"
+				), 
+		139 => array( 
+					"bugId" => "LongLogTag",
+					"bugSummary" => "Too Long Log Tags",
+					"priority" => "MEDIUM"
+				), 
+		140 => array( 
+					"bugId" => "LogTagMismatch",
+					"bugSummary" => "Mismatched Log Tags",
+					"priority" => "MEDIUM"
+				), 
+		141 => array( 
+					"bugId" => "AllowBackup",
+					"bugSummary" => "AllowBackup/FullBackupContent Problems",
+					"priority" => "MEDIUM"
+				), 
+		142 => array( 
+					"bugId" => "MissingApplicationIcon",
+					"bugSummary" => "Missing application icon",
+					"priority" => "MEDIUM"
+				), 
+		143 => array( 
+					"bugId" => "DeviceAdmin",
+					"bugSummary" => "Malformed Device Admin",
+					"priority" => "MEDIUM"
+				), 
+		144 => array( 
+					"bugId" => "DuplicateActivity",
+					"bugSummary" => "Activity registered more than once",
+					"priority" => "MEDIUM"
+				), 
+		145 => array( 
+					"bugId" => "DuplicateUsesFeature",
+					"bugSummary" => "Feature declared more than once",
+					"priority" => "MEDIUM"
+				), 
+		146 => array( 
+					"bugId" => "GradleOverrides",
+					"bugSummary" => "Value overridden by Gradle build script",
+					"priority" => "MEDIUM"
+				), 
+		147 => array( 
+					"bugId" => "IllegalResourceRef",
+					"bugSummary" => "Name and version must be integer or string, not",
+					"priority" => "MEDIUM"
+				), 
+		148 => array( 
+					"bugId" => "MipmapIcons",
+					"bugSummary" => "Use Mipmap Launcher Icons",
+					"priority" => "MEDIUM"
+				), 
+		149 => array( 
+					"bugId" => "MockLocation",
+					"bugSummary" => "Using mock location provider in production",
+					"priority" => "MEDIUM"
+				), 
+		150 => array( 
+					"bugId" => "MultipleUsesSdk",
+					"bugSummary" => "Multiple <uses-sdk> elements in the manifest",
+					"priority" => "MEDIUM"
+				), 
+		151 => array( 
+					"bugId" => "ManifestOrder",
+					"bugSummary" => "Incorrect order of elements in manifest",
+					"priority" => "MEDIUM"
+				), 
+		152 => array( 
+					"bugId" => "MissingVersion",
+					"bugSummary" => "Missing application name/version",
+					"priority" => "MEDIUM"
+				), 
+		153 => array( 
+					"bugId" => "OldTargetApi",
+					"bugSummary" => "Target SDK attribute is not targeting latest version",
+					"priority" => "MEDIUM"
+				), 
+		154 => array( 
+					"bugId" => "UniquePermission",
+					"bugSummary" => "Permission names are not unique",
+					"priority" => "MEDIUM"
+				), 
+		155 => array( 
+					"bugId" => "UsesMinSdkAttributes",
+					"bugSummary" => "Minimum SDK and target SDK attributes not defined",
+					"priority" => "MEDIUM"
+				), 
+		156 => array( 
+					"bugId" => "WearableBindListener",
+					"bugSummary" => "Usage of Android Wear BIND_LISTENER is deprecated",
+					"priority" => "MEDIUM"
+				), 
+		157 => array( 
+					"bugId" => "WrongManifestParent",
+					"bugSummary" => "Wrong manifest parent",
+					"priority" => "MEDIUM"
+				), 
+		158 => array( 
+					"bugId" => "InvalidPermission",
+					"bugSummary" => "Invalid Permission Attribute",
+					"priority" => "MEDIUM"
+				), 
+		159 => array( 
+					"bugId" => "ManifestResource",
+					"bugSummary" => "Manifest Resource References",
+					"priority" => "MEDIUM"
+				), 
+		160 => array( 
+					"bugId" => "ManifestTypo",
+					"bugSummary" => "Typos in manifest tags",
+					"priority" => "MEDIUM"
+				), 
+		161 => array( 
+					"bugId" => "FloatMath",
+					"bugSummary" => "Using FloatMath instead of Math",
+					"priority" => "MEDIUM"
+				), 
+		162 => array( 
+					"bugId" => "MergeMarker",
+					"bugSummary" => "Code contains merge marker",
+					"priority" => "MEDIUM"
+				), 
+		163 => array( 
+					"bugId" => "MergeRootFrame",
+					"bugSummary" => "FrameLayout can be replaced with <merge> tag",
+					"priority" => "MEDIUM"
+				), 
+		164 => array( 
+					"bugId" => "InnerclassSeparator",
+					"bugSummary" => "Inner classes should use $ rather than .",
+					"priority" => "MEDIUM"
+				), 
+		165 => array( 
+					"bugId" => "Instantiatable",
+					"bugSummary" => "Registered class is not instantiatable",
+					"priority" => "MEDIUM"
+				), 
+		166 => array( 
+					"bugId" => "MissingRegistered",
+					"bugSummary" => "Missing registered class",
+					"priority" => "MEDIUM"
+				), 
+		167 => array( 
+					"bugId" => "MissingId",
+					"bugSummary" => "Fragments should specify an id or tag",
+					"priority" => "MEDIUM"
+				), 
+		168 => array( 
+					"bugId" => "LibraryCustomView",
+					"bugSummary" => "Custom views in libraries should use res-auto-namespace",
+					"priority" => "MEDIUM"
+				), 
+		169 => array( 
+					"bugId" => "ResAuto",
+					"bugSummary" => "Hardcoded Package in Namespace",
+					"priority" => "MEDIUM"
+				), 
+		170 => array( 
+					"bugId" => "NamespaceTypo",
+					"bugSummary" => "Misspelled namespace declaration",
+					"priority" => "MEDIUM"
+				), 
+		171 => array( 
+					"bugId" => "UnusedNamespace",
+					"bugSummary" => "Unused namespace",
+					"priority" => "MEDIUM"
+				), 
+		172 => array( 
+					"bugId" => "NegativeMargin",
+					"bugSummary" => "Negative Margins",
+					"priority" => "MEDIUM"
+				), 
+		173 => array( 
+					"bugId" => "NestedScrolling",
+					"bugSummary" => "Nested scrolling widgets",
+					"priority" => "MEDIUM"
+				), 
+		174 => array( 
+					"bugId" => "NetworkSecurityConfig",
+					"bugSummary" => "Valid Network Security Config File",
+					"priority" => "MEDIUM"
+				), 
+		175 => array( 
+					"bugId" => "MissingBackupPin",
+					"bugSummary" => "Missing Backup Pin",
+					"priority" => "MEDIUM"
+				), 
+		176 => array( 
+					"bugId" => "PinSetExpiry",
+					"bugSummary" => "Validate <pin-set> expiration attribute",
+					"priority" => "MEDIUM"
+				), 
+		177 => array( 
+					"bugId" => "NfcTechWhitespace",
+					"bugSummary" => "Whitespace in NFC tech lists",
+					"priority" => "MEDIUM"
+				), 
+		178 => array( 
+					"bugId" => "UnlocalizedSms",
+					"bugSummary" => "SMS phone number missing country code",
+					"priority" => "MEDIUM"
+				), 
+		179 => array( 
+					"bugId" => "ObjectAnimatorBinding",
+					"bugSummary" => "Incorrect ObjectAnimator Property",
+					"priority" => "MEDIUM"
+				), 
+		180 => array( 
+					"bugId" => "AnimatorKeep",
+					"bugSummary" => "Missing @Keep for Animated Properties",
+					"priority" => "MEDIUM"
+				), 
+		181 => array( 
+					"bugId" => "ObsoleteLayoutParam",
+					"bugSummary" => "Obsolete layout params",
+					"priority" => "MEDIUM"
+				), 
+		182 => array( 
+					"bugId" => "OnClick",
+					"bugSummary" => "onClick method does not exist",
+					"priority" => "MEDIUM"
+				), 
+		183 => array( 
+					"bugId" => "Overdraw",
+					"bugSummary" => "Overdraw",
+					"priority" => "MEDIUM"
+				), 
+		184 => array( 
+					"bugId" => "DalvikOverride",
+					"bugSummary" => "Method considered overridden by Dalvik",
+					"priority" => "MEDIUM"
+				), 
+		185 => array( 
+					"bugId" => "OverrideAbstract",
+					"bugSummary" => "Not overriding abstract methods on older platforms",
+					"priority" => "MEDIUM"
+				), 
+		186 => array( 
+					"bugId" => "ParcelCreator",
+					"bugSummary" => "Missing Parcelable CREATOR field",
+					"priority" => "MEDIUM"
+				), 
+		187 => array( 
+					"bugId" => "UnusedQuantity",
+					"bugSummary" => "Unused quantity translations",
+					"priority" => "MEDIUM"
+				), 
+		188 => array( 
+					"bugId" => "MissingQuantity",
+					"bugSummary" => "Missing quantity translation",
+					"priority" => "MEDIUM"
+				), 
+		189 => array( 
+					"bugId" => "ImpliedQuantity",
+					"bugSummary" => "Implied Quantities",
+					"priority" => "MEDIUM"
+				), 
+		190 => array( 
+					"bugId" => "ExportedPreferenceActivity",
+					"bugSummary" => "PreferenceActivity should not be exported",
+					"priority" => "MEDIUM"
+				), 
+		191 => array( 
+					"bugId" => "PackagedPrivateKey",
+					"bugSummary" => "Packaged private key",
+					"priority" => "MEDIUM"
+				), 
+		192 => array( 
+					"bugId" => "PrivateResource",
+					"bugSummary" => "Using private resources",
+					"priority" => "MEDIUM"
+				), 
+		193 => array( 
+					"bugId" => "ProguardSplit",
+					"bugSummary" => "Proguard.cfg file contains generic Android rules",
+					"priority" => "MEDIUM"
+				), 
+		194 => array( 
+					"bugId" => "Proguard",
+					"bugSummary" => "Using obsolete ProGuard configuration",
+					"priority" => "MEDIUM"
+				), 
+		195 => array( 
+					"bugId" => "PropertyEscape",
+					"bugSummary" => "Incorrect property escapes",
+					"priority" => "MEDIUM"
+				), 
+		196 => array( 
+					"bugId" => "UsingHttp",
+					"bugSummary" => "Using HTTP instead of HTTPS",
+					"priority" => "MEDIUM"
+				), 
+		197 => array( 
+					"bugId" => "SpUsage",
+					"bugSummary" => "Using dp instead of sp for text sizes",
+					"priority" => "MEDIUM"
+				), 
+		198 => array( 
+					"bugId" => "InOrMmUsage",
+					"bugSummary" => "Using mm or in dimensions",
+					"priority" => "MEDIUM"
+				), 
+		199 => array( 
+					"bugId" => "PxUsage",
+					"bugSummary" => "Using 'px' dimension",
+					"priority" => "MEDIUM"
+				), 
+		200 => array( 
+					"bugId" => "SmallSp",
+					"bugSummary" => "Text size is too small",
+					"priority" => "MEDIUM"
+				), 
+		201 => array( 
+					"bugId" => "ParcelClassLoader",
+					"bugSummary" => "Default Parcel Class Loader",
+					"priority" => "MEDIUM"
+				), 
+		202 => array( 
+					"bugId" => "PendingBindings",
+					"bugSummary" => "Missing Pending Bindings",
+					"priority" => "MEDIUM"
+				), 
+		203 => array( 
+					"bugId" => "RecyclerView",
+					"bugSummary" => "RecyclerView Problems",
+					"priority" => "MEDIUM"
+				), 
+		204 => array( 
+					"bugId" => "Registered",
+					"bugSummary" => "Class is not registered in the manifest",
+					"priority" => "MEDIUM"
+				), 
+		205 => array( 
+					"bugId" => "RelativeOverlap",
+					"bugSummary" => "Overlapping items in RelativeLayout",
+					"priority" => "MEDIUM"
+				), 
+		206 => array( 
+					"bugId" => "RequiredSize",
+					"bugSummary" => "Missing layout_width or layout_height attributes",
+					"priority" => "MEDIUM"
+				), 
+		207 => array( 
+					"bugId" => "AaptCrash",
+					"bugSummary" => "Potential AAPT crash",
+					"priority" => "MEDIUM"
+				), 
+		208 => array( 
+					"bugId" => "ResourceCycle",
+					"bugSummary" => "Cycle in resource definitions",
+					"priority" => "MEDIUM"
+				), 
+		209 => array( 
+					"bugId" => "ResourceName",
+					"bugSummary" => "Resource with Wrong Prefix",
+					"priority" => "MEDIUM"
+				), 
+		210 => array( 
+					"bugId" => "ValidRestrictions",
+					"bugSummary" => "Invalid Restrictions Descriptor",
+					"priority" => "MEDIUM"
+				), 
+		211 => array( 
+					"bugId" => "RtlCompat",
+					"bugSummary" => "Right-to-left text compatibility issues",
+					"priority" => "MEDIUM"
+				), 
+		212 => array( 
+					"bugId" => "RtlEnabled",
+					"bugSummary" => "Using RTL attributes without enabling RTL support",
+					"priority" => "MEDIUM"
+				), 
+		213 => array( 
+					"bugId" => "RtlSymmetry",
+					"bugSummary" => "Padding and margin symmetry",
+					"priority" => "MEDIUM"
+				), 
+		214 => array( 
+					"bugId" => "RtlHardcoded",
+					"bugSummary" => "Using left/right instead of start/end attributes",
+					"priority" => "MEDIUM"
+				), 
+		215 => array( 
+					"bugId" => "ScrollViewSize",
+					"bugSummary" => "ScrollView size validation",
+					"priority" => "MEDIUM"
+				), 
+		216 => array( 
+					"bugId" => "SdCardPath",
+					"bugSummary" => "Hardcoded reference to /sdcard",
+					"priority" => "MEDIUM"
+				), 
+		217 => array( 
+					"bugId" => "SecureRandom",
+					"bugSummary" => "Using a fixed seed with SecureRandom",
+					"priority" => "MEDIUM"
+				), 
+		218 => array( 
+					"bugId" => "TrulyRandom",
+					"bugSummary" => "Weak RNG",
+					"priority" => "MEDIUM"
+				), 
+		219 => array( 
+					"bugId" => "ExportedContentProvider",
+					"bugSummary" => "Content provider does not require permission",
+					"priority" => "MEDIUM"
+				), 
+		220 => array( 
+					"bugId" => "ExportedReceiver",
+					"bugSummary" => "Receiver does not require permission",
+					"priority" => "MEDIUM"
+				), 
+		221 => array( 
+					"bugId" => "ExportedService",
+					"bugSummary" => "Exported service does not require permission",
+					"priority" => "MEDIUM"
+				), 
+		222 => array( 
+					"bugId" => "SetWorldReadable",
+					"bugSummary" => "File.setReadable() used to make file world-readable",
+					"priority" => "MEDIUM"
+				), 
+		223 => array( 
+					"bugId" => "SetWorldWritable",
+					"bugSummary" => "File.setWritable() used to make file world-writable",
+					"priority" => "MEDIUM"
+				), 
+		224 => array( 
+					"bugId" => "GrantAllUris",
+					"bugSummary" => "Content provider shares everything",
+					"priority" => "MEDIUM"
+				), 
+		225 => array( 
+					"bugId" => "WorldReadableFiles",
+					"bugSummary" => "openFileOutput() or similar call passing",
+					"priority" => "MEDIUM"
+				), 
+		226 => array( 
+					"bugId" => "WorldWriteableFiles",
+					"bugSummary" => "openFileOutput() or similar call passing",
+					"priority" => "MEDIUM"
+				), 
+		227 => array( 
+					"bugId" => "ServiceCast",
+					"bugSummary" => "Wrong system service casts",
+					"priority" => "MEDIUM"
+				), 
+		228 => array( 
+					"bugId" => "WifiManagerLeak",
+					"bugSummary" => "WifiManager Leak",
+					"priority" => "MEDIUM"
+				), 
+		229 => array( 
+					"bugId" => "WifiManagerPotentialLeak",
+					"bugSummary" => "WifiManager Potential Leak",
+					"priority" => "MEDIUM"
+				), 
+		230 => array( 
+					"bugId" => "SetJavaScriptEnabled",
+					"bugSummary" => "Using setJavaScriptEnabled",
+					"priority" => "MEDIUM"
+				), 
+		231 => array( 
+					"bugId" => "SignatureOrSystemPermissions",
+					"bugSummary" => "signatureOrSystem permissions declared",
+					"priority" => "MEDIUM"
+				), 
+		232 => array( 
+					"bugId" => "SQLiteString",
+					"bugSummary" => "Using STRING instead of TEXT",
+					"priority" => "MEDIUM"
+				), 
+		233 => array( 
+					"bugId" => "SSLCertificateSocketFactoryCreateSocket",
+					"bugSummary" => "Insecure call to",
+					"priority" => "MEDIUM"
+				), 
+		234 => array( 
+					"bugId" => "SSLCertificateSocketFactoryGetInsecure",
+					"bugSummary" => "Call to",
+					"priority" => "MEDIUM"
+				), 
+		235 => array( 
+					"bugId" => "StateListReachable",
+					"bugSummary" => "Unreachable state in a <selector>",
+					"priority" => "MEDIUM"
+				), 
+		236 => array( 
+					"bugId" => "AuthLeak",
+					"bugSummary" => "Code might contain an auth leak",
+					"priority" => "MEDIUM"
+				), 
+		237 => array( 
+					"bugId" => "StringFormatCount",
+					"bugSummary" => "Formatting argument types incomplete or inconsistent",
+					"priority" => "MEDIUM"
+				), 
+		238 => array( 
+					"bugId" => "StringFormatMatches",
+					"bugSummary" => "String.format string doesn't match the XML format",
+					"priority" => "MEDIUM"
+				), 
+		239 => array( 
+					"bugId" => "StringFormatInvalid",
+					"bugSummary" => "Invalid format string",
+					"priority" => "MEDIUM"
+				), 
+		240 => array( 
+					"bugId" => "PluralsCandidate",
+					"bugSummary" => "Potential Plurals",
+					"priority" => "MEDIUM"
+				), 
+		241 => array( 
+					"bugId" => "UseCheckPermission",
+					"bugSummary" => "Using the result of check permission calls",
+					"priority" => "MEDIUM"
+				), 
+		242 => array( 
+					"bugId" => "CheckResult",
+					"bugSummary" => "Ignoring results",
+					"priority" => "MEDIUM"
+				), 
+		243 => array( 
+					"bugId" => "ResourceAsColor",
+					"bugSummary" => "Should pass resolved color instead of resource id",
+					"priority" => "MEDIUM"
+				), 
+		244 => array( 
+					"bugId" => "MissingPermission",
+					"bugSummary" => "Missing Permissions",
+					"priority" => "MEDIUM"
+				), 
+		245 => array( 
+					"bugId" => "Range",
+					"bugSummary" => "Outside Range",
+					"priority" => "MEDIUM"
+				), 
+		246 => array( 
+					"bugId" => "ResourceType",
+					"bugSummary" => "Wrong Resource Type",
+					"priority" => "MEDIUM"
+				), 
+		247 => array( 
+					"bugId" => "RestrictedApi",
+					"bugSummary" => "Restricted API",
+					"priority" => "MEDIUM"
+				), 
+		248 => array( 
+					"bugId" => "WrongThread",
+					"bugSummary" => "Wrong Thread",
+					"priority" => "MEDIUM"
+				), 
+		249 => array( 
+					"bugId" => "WrongConstant",
+					"bugSummary" => "Incorrect constant",
+					"priority" => "MEDIUM"
+				), 
+		250 => array( 
+					"bugId" => "VisibleForTests",
+					"bugSummary" => "Visible Only For Tests",
+					"priority" => "MEDIUM"
+				), 
+		251 => array( 
+					"bugId" => "ProtectedPermissions",
+					"bugSummary" => "Using system app permission",
+					"priority" => "MEDIUM"
+				), 
+		252 => array( 
+					"bugId" => "TextFields",
+					"bugSummary" => "Missing inputType or hint",
+					"priority" => "MEDIUM"
+				), 
+		253 => array( 
+					"bugId" => "TextViewEdits",
+					"bugSummary" => "TextView should probably be an EditText instead",
+					"priority" => "MEDIUM"
+				), 
+		254 => array( 
+					"bugId" => "SelectableText",
+					"bugSummary" => "Dynamic text should probably be selectable",
+					"priority" => "MEDIUM"
+				), 
+		255 => array( 
+					"bugId" => "MenuTitle",
+					"bugSummary" => "Missing menu title",
+					"priority" => "MEDIUM"
+				), 
+		256 => array( 
+					"bugId" => "ShowToast",
+					"bugSummary" => "Toast created but not shown",
+					"priority" => "MEDIUM"
+				), 
+		257 => array( 
+					"bugId" => "TooDeepLayout",
+					"bugSummary" => "Layout hierarchy is too deep",
+					"priority" => "MEDIUM"
+				), 
+		258 => array( 
+					"bugId" => "TooManyViews",
+					"bugSummary" => "Layout has too many views",
+					"priority" => "MEDIUM"
+				), 
+		259 => array( 
+					"bugId" => "ExtraTranslation",
+					"bugSummary" => "Extra translation",
+					"priority" => "MEDIUM"
+				), 
+		260 => array( 
+					"bugId" => "MissingTranslation",
+					"bugSummary" => "Incomplete translation",
+					"priority" => "MEDIUM"
+				), 
+		261 => array( 
+					"bugId" => "Typos",
+					"bugSummary" => "Spelling error",
+					"priority" => "MEDIUM"
+				), 
+		262 => array( 
+					"bugId" => "TypographyDashes",
+					"bugSummary" => "Hyphen can be replaced with dash",
+					"priority" => "MEDIUM"
+				), 
+		263 => array( 
+					"bugId" => "TypographyEllipsis",
+					"bugSummary" => "Ellipsis string can be replaced with ellipsis character",
+					"priority" => "MEDIUM"
+				), 
+		264 => array( 
+					"bugId" => "TypographyFractions",
+					"bugSummary" => "Fraction string can be replaced with fraction",
+					"priority" => "MEDIUM"
+				), 
+		265 => array( 
+					"bugId" => "TypographyOther",
+					"bugSummary" => "Other typographical problems",
+					"priority" => "MEDIUM"
+				), 
+		266 => array( 
+					"bugId" => "TypographyQuotes",
+					"bugSummary" => "Straight quotes can be replaced with curvy quotes",
+					"priority" => "MEDIUM"
+				), 
+		267 => array( 
+					"bugId" => "UnsafeProtectedBroadcastReceiver",
+					"bugSummary" => "Unsafe Protected BroadcastReceiver",
+					"priority" => "MEDIUM"
+				), 
+		268 => array( 
+					"bugId" => "UnprotectedSMSBroadcastReceiver",
+					"bugSummary" => "Unprotected SMS BroadcastReceiver",
+					"priority" => "MEDIUM"
+				), 
+		269 => array( 
+					"bugId" => "UnusedResources",
+					"bugSummary" => "Unused resources",
+					"priority" => "MEDIUM"
+				), 
+		270 => array( 
+					"bugId" => "UnusedIds",
+					"bugSummary" => "Unused id",
+					"priority" => "MEDIUM"
+				), 
+		271 => array( 
+					"bugId" => "UseCompoundDrawables",
+					"bugSummary" => "Node can be replaced by a TextView with compound",
+					"priority" => "MEDIUM"
+				), 
+		272 => array( 
+					"bugId" => "UselessLeaf",
+					"bugSummary" => "Useless leaf layout",
+					"priority" => "MEDIUM"
+				), 
+		273 => array( 
+					"bugId" => "UselessParent",
+					"bugSummary" => "Useless parent layout",
+					"priority" => "MEDIUM"
+				), 
+		274 => array( 
+					"bugId" => "EnforceUTF8",
+					"bugSummary" => "Encoding used in resource files is not UTF-8",
+					"priority" => "MEDIUM"
+				), 
+		275 => array( 
+					"bugId" => "VectorRaster",
+					"bugSummary" => "Vector Image Generation",
+					"priority" => "MEDIUM"
+				), 
+		276 => array( 
+					"bugId" => "VectorDrawableCompat",
+					"bugSummary" => "Using VectorDrawableCompat",
+					"priority" => "MEDIUM"
+				), 
+		277 => array( 
+					"bugId" => "ViewConstructor",
+					"bugSummary" => "Missing View constructors for XML inflation",
+					"priority" => "MEDIUM"
+				), 
+		278 => array( 
+					"bugId" => "ViewHolder",
+					"bugSummary" => "View Holder Candidates",
+					"priority" => "MEDIUM"
+				), 
+		279 => array( 
+					"bugId" => "ViewTag",
+					"bugSummary" => "Tagged object leaks",
+					"priority" => "MEDIUM"
+				), 
+		280 => array( 
+					"bugId" => "WrongViewCast",
+					"bugSummary" => "Mismatched view type",
+					"priority" => "MEDIUM"
+				), 
+		281 => array( 
+					"bugId" => "Wakelock",
+					"bugSummary" => "Incorrect WakeLock usage",
+					"priority" => "MEDIUM"
+				), 
+		282 => array( 
+					"bugId" => "WebViewLayout",
+					"bugSummary" => "WebViews in wrap_content parents",
+					"priority" => "MEDIUM"
+				), 
+		283 => array( 
+					"bugId" => "WrongCall",
+					"bugSummary" => "Using wrong draw/layout method",
+					"priority" => "MEDIUM"
+				), 
+		284 => array( 
+					"bugId" => "WrongCase",
+					"bugSummary" => "Wrong case for view tag",
+					"priority" => "MEDIUM"
+				), 
+		285 => array( 
+					"bugId" => "InvalidId",
+					"bugSummary" => "Invalid ID declaration",
+					"priority" => "MEDIUM"
+				), 
+		286 => array( 
+					"bugId" => "NotSibling",
+					"bugSummary" => "RelativeLayout Invalid Constraints",
+					"priority" => "MEDIUM"
+				), 
+		287 => array( 
+					"bugId" => "UnknownId",
+					"bugSummary" => "Reference to an unknown id",
+					"priority" => "MEDIUM"
+				), 
+		288 => array( 
+					"bugId" => "UnknownIdInLayout",
+					"bugSummary" => "Reference to an id that is not in the current layout",
+					"priority" => "MEDIUM"
+				), 
+		289 => array( 
+					"bugId" => "SuspiciousImport",
+					"bugSummary" => "'import android.R' statement",
+					"priority" => "MEDIUM"
+				), 
+		290 => array( 
+					"bugId" => "WrongFolder",
+					"bugSummary" => "Resource file in the wrong res folder",
+					"priority" => "MEDIUM"
+				)
+);
+
+$CATEGORY = array(
+		"Correctness",
+		"Security",
+		"Performance",
+		"Usability",
+		"Accessibility",
+		"Internationalization"
+	);
+
+?>

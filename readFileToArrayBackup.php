@@ -19,10 +19,16 @@
 		}
 	}
 	//print_r( $idWithDescription );
+	echo '$MASTER_LIST = array('."\n";
 	$sz = count( $idWithDescription );
 	for( $index = 0; $index < $sz; $index++ ) {
-		echo $index."[bugId] = "."\"".$idWithDescription[ $index ]['bugId']."\"\n";
-		echo $index."[bugSummary] = "."\"".$idWithDescription[ $index ]['bugSummary']."\"\n";
-		echo $index."[priority] = "."\"".$idWithDescription[ $index ]['priority']."\"\n\n\n";
+		//echo '"'.$idWithDescription[ $index ][ 0 ].'" => "'.$idWithDescription[ $index ][ 1 ].'", '."\n";
+		echo $index.' => array( 
+			"bugId" => "'.$idWithDescription[ $index ]['bugId'].'",
+			"bugSummary" => "'.$idWithDescription[ $index ]['bugSummary'].'",
+			"priority" => "'.$idWithDescription[ $index ]['priority'].'"
+		), '."\n";
 	}
+
+	echo ');';
 ?>

@@ -41,13 +41,30 @@
 					$index++;
 				}
 			}
+			$position = getLocation( $desc[ 0 ] );
+			$positionStr = "";
+			if( $position != -1 ) {
+				$positionStr = trim( substr( $desc[ 0 ], 0, $position ) );
+			}
 			// assign priority
 			$id = trim( getBugId( $desc[ 0 ] ) );
-			$priority = getPriorityFromList( $errorList, $id );
-			if( $priority == "" ) {
+			$priorityAndSummary = getPriorityWithSummaryFromList( $errorList, $id );
+			
+			if( $priorityAndSummary == "" ) {
 				$priority = "NO PRIORITY";
+				$summary = "NO SUMMARY";
+			} else {  // split priority and summary
+				$priorityAndSummaryArr = preg_split( "/\s+/", $priorityAndSummary, 2 );
+				$priority = $priorityAndSummaryArr[ 0 ];
+				$summary = $priorityAndSummaryArr[ 1 ];
 			}
 			array_push( $desc,  $priority );
+			// push bugId
+			array_push( $desc, $id );
+			// push summary
+			array_push( $desc, $summary );
+			// push locaction
+			array_push( $desc, $positionStr );
 			fputcsv( $csvFilePointer,  $desc );
 			//print_r( $desc );
 			$desc = array();
@@ -94,15 +111,27 @@
 		return "";
 	}
 
-	function getPriorityFromList( & $errorList, $bugId ) {
+	function getPriorityWithSummaryFromList( & $errorList, $bugId ) {
 
 		$sz = sizeof( $errorList );
 		for( $index = 0; $index < $sz; $index++ ) {
 			if( $errorList[ $index ][ 'bugId' ] == $bugId ) {
-				return trim( $errorList[ $index ][ 'priority'] );
+				return trim( $errorList[ $index ][ 'priority'] )." ".trim( $errorList[ $index ][ 'bugSummary' ] );
 			}
 		}
 		return "";
 	}
+
+	function getLocation( $line ) {
+
+		$pattern = "/(Error:)|(Warning:)/";
+		$matches = array();
+		preg_match( $pattern,  $line, $matches, PREG_OFFSET_CAPTURE );
+		if( !isset( $matches[ 0 ][ 1 ]) ) {
+			return -1;
+		}
+		return $matches[ 0 ][ 1 ];
+	}
+
 
 ?>
